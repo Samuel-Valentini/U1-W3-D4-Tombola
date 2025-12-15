@@ -48,7 +48,7 @@ const randomNumber = (arr) => {
   const numberExtracted = Math.floor(Math.random() * arr.length);
   let result = arr[numberExtracted];
   arr.splice(numberExtracted, 1);
-  console.log(arr);
+  //   console.log(arr);
   return result;
 };
 
