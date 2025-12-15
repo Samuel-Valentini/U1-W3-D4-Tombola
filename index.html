@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="./assets/style/styles.css" />
   </head>
   <body>
+    <header>
+      <h1>Tombola</h1>
+      <p>Gioca online</p>
+      <form>
+        <fieldset>
+          <legend>Per favore seleziona se giocare con 90 o 72 numeri</legend>
+          <div>
+            <input type="radio" name="num" id="90tab" checked="checked" value="90" />
+            <label for="90tab">90</label>
+            <input type="radio" name="num" id="76tab" value="76" /> <label for="76tab">76</label>
+          </div>
+        </fieldset>
+      </form>
+    </header>
+    <div class="container">
+      <main>
+        <section id="tabellone"></section>
+        <section id="estrattore"><input id="estrai" type="button" value="Estrai" /></section>
+        <section id="tabelline"></section>
+      </main>
+    </div>
     <script src="./assets/script/script.js"></script>
   </body>
 </html>

@@ -15,6 +15,16 @@ body {
   color: #ebebeb;
 }
 
+header {
+  text-align: center;
+}
+
+fieldset {
+  display: inline-block;
+  margin-bottom: 1.5em;
+  accent-color: #7a408a;
+}
+
 h1 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -26,47 +36,29 @@ h1 {
   pointer-events: none;
 }
 
-h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-form {
-  display: inline;
-}
-
-.color-epic {
-  color: #ba51d7;
-}
-
 .container {
   max-width: 768px;
+  /* width: 80%; */
   margin-inline: auto;
 }
 
-#calendar {
+#tabellone {
   background-color: #0c0b1d;
   color: #ebebeb;
   border-radius: 8px;
   border: 8px solid #0c0b1d;
 }
 
-.day {
+.num {
   display: inline-block;
-  width: 14%;
-  height: 106px;
+  width: 7.5%;
+  padding-block: 1.5em;
   position: relative;
   border: 1px solid transparent;
   border-radius: 8px;
-  cursor: pointer;
 }
 
-.day:hover {
-  background-color: #15132e;
-}
-
-.day h3 {
+.num h3 {
   text-align: center;
   font-size: 26px;
   margin: 0;
@@ -77,102 +69,28 @@ form {
   transform: translateY(-50%);
 }
 
-.day.selected {
-  /* un elemento dovrebbe avere class="day selected" oppure "selected day" */
-  /* questo è un selettore che va a cercare gli elementi HTML dotati di
-  classe "day" e "selected" contemporaneamente */
+.num.selected {
   border-color: #7a408a;
+  background-color: #7a408a66;
 }
 
-.dot {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #7a408a;
-}
-
-#addMeeting div {
-  display: inline-block;
-  margin-right: 48px;
-  vertical-align: bottom;
-}
-
-input {
-  width: 130px;
-  min-height: 36px;
+#estrai {
+  margin-inline: auto;
+  color: white;
   background-color: #0c0b1d;
-  color: #ebebeb;
-  border: none;
-  padding: 10px;
+  padding: 1em;
+  font-size: 1.5em;
   font-weight: 700;
-  border-radius: 3px;
+  border-radius: 11px;
 }
 
-input:focus {
-  background-color: #2d2a59;
-}
-
-input::placeholder {
-  color: #ebebeb;
-}
-
-input:focus::placeholder {
-  color: #615d9c;
-}
-
-#newMeetingDay {
-  display: inline-block;
-  min-height: 40px;
-  margin: 0 2em;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-#newMeetingDay.hasDay {
-  font-size: 28px;
-  background-color: #0c0b1d;
-  border-radius: 3px;
-  color: #ebebeb;
-  padding: 20px;
-  margin-right: 1em;
-}
-
-#newMeetingTime::-webkit-calendar-picker-indicator {
-  background-color: #7a408a;
-  border-radius: 50%;
+#estrai:hover {
+  background-color: #15132e;
   cursor: pointer;
+  border: 1 px solid red;
 }
 
-#newMeetingName {
-  width: 205px;
-}
-
-form button {
-  cursor: pointer;
-  background-color: #7a408a;
-  color: #efd7f5;
-  border: none;
-  width: 130px;
-  min-height: 36px;
-  font-weight: 700;
-}
-
-#appointments {
-  display: none;
-}
-
-#appointmentsList {
-  padding-inline-start: 16px;
-}
-
-#appointmentsList li {
-  min-height: 30px;
-}
-
-#appointmentsList li::marker {
-  color: #7a408a;
+#estrattore {
+  text-align: center;
+  margin: 1.5em;
 }
