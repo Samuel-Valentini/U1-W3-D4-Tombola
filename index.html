@@ -12,7 +12,7 @@
       <p>Gioca online</p>
       <form>
         <fieldset>
-          <legend>Per favore seleziona se giocare con 90 o 72 numeri</legend>
+          <legend>Per favore seleziona se giocare con 90 o 76 numeri</legend>
           <div>
             <input type="radio" name="num" id="90tab" checked="checked" value="90" />
             <label for="90tab">90</label>
@@ -24,7 +24,15 @@
     <div class="container">
       <main>
         <section id="tabellone"></section>
-        <section id="estrattore"><input id="estrai" type="button" value="Estrai" /></section>
+        <div id="chooser">
+          <form id="schedine">
+            <fieldset>
+              <legend>Per favore seleziona con quante schedine vuoi giocare</legend>
+              <div><input type="number" placeholder="0" value="0" step="1" min="0" id="slipNumber" /></div>
+            </fieldset>
+          </form>
+          <section id="estrattore"><input id="estrai" type="button" value="Estrai" /></section>
+        </div>
         <section id="tabelline"></section>
       </main>
     </div>

@@ -19,10 +19,20 @@ header {
   text-align: center;
 }
 
+form {
+  margin-inline: auto;
+  text-align: center;
+  display: inline-block;
+}
+
 fieldset {
   display: inline-block;
+
   margin-bottom: 1.5em;
+  margin-inline: 1.5em;
   accent-color: #7a408a;
+
+  padding-block: 1.6em;
 }
 
 h1 {
@@ -42,11 +52,21 @@ h1 {
   margin-inline: auto;
 }
 
+.container2 {
+  max-width: 768px;
+  /* width: 80%; */
+  margin-inline: auto;
+  margin-block: 2em;
+  border: 1px solid #7a408a;
+  background-color: #0c0b1d;
+}
+
 #tabellone {
   background-color: #0c0b1d;
   color: #ebebeb;
   border-radius: 8px;
   border: 8px solid #0c0b1d;
+  margin-bottom: 1.5em;
 }
 
 .num {
@@ -74,6 +94,31 @@ h1 {
   background-color: #7a408a66;
 }
 
+.num2 {
+  display: inline-block;
+  width: 20%;
+  padding-block: 1.5em;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.num2 h3 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.num2.selected {
+  border-color: #7a408a;
+  background-color: #7a408a66;
+}
+
 #estrai {
   margin-inline: auto;
   color: white;
@@ -93,4 +138,46 @@ h1 {
 #estrattore {
   text-align: center;
   margin: 1.5em;
+  display: inline-block;
+}
+
+.numtab {
+  display: inline-block;
+  width: 19.6%;
+  padding-block: 1.5em;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.numtab h3 {
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#slipNumber {
+  width: 3em;
+  text-align: right;
+}
+
+#chooser {
+  text-align: center;
+  display: inline-block;
+}
+
+#schedine {
+  width: 46%;
+}
+
+#tabelline {
+  color: #ebebeb;
+  border-radius: 8px;
+
+  margin-bottom: 1.5em;
 }
