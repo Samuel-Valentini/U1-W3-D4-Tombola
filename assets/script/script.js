@@ -36,7 +36,7 @@ const boxesGenerator = (num) => {
 boxesGenerator(n);
 
 const drawing = () => {
-  const randomNumber = Math.floor(Math.random() * (n + 1));
+  const randomNumber = Math.floor(Math.random() * n) + 1;
   const div = document.getElementById(randomNumber);
   div.classList.add("selected");
 };
